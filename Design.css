@@ -1,0 +1,79 @@
+:root{
+    --color1:skyblue;
+    --color2:#357bb3;
+    --color3:rgb(30, 23, 37);
+    /* --color3:rgb(12, 0, 41); */
+}
+div{
+   margin-top: 300px;
+   margin-left: 695px;
+}
+.buttonTheme{
+    z-index: 0;
+    background-color: var(--color2);
+    width: 130px;
+    height: 50px;
+    border-radius: 50px;
+    box-shadow: 0.5px 0.5px 5px 0px var(--color3) inset;    
+    transition: all 1s; 
+}
+
+.slideDay{
+    position: relative;
+    z-index: 1;
+    top:5px;
+    left:5%;
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    background-color: orange;
+    box-shadow: 0px -2px 2px 0px rgb(95, 92, 92) inset, 0.5px 0.5px 2px 0px rgb(255, 255, 255) inset, -1px -2px 0px 15px rgb(255, 255, 255,0.1),-1px -2px 0px 30px rgb(255, 255, 255,0.1),-1px -2px 0px 45px rgb(255, 255, 255,0.1);
+    animation-name:right ;
+    transition: all 1s;
+
+}
+.slideNight{
+    position: relative;
+    z-index: 1;
+    top:5px;
+    left:64%;
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    background-color: lightgray;
+    box-shadow: 0px -2px 1px 0px rgb(95, 92, 92) inset, -0.5px 0.5px 2px 0px rgb(255, 255, 255) inset, -1px -2px 0px 15px rgb(255, 255, 255,0.1),-1px -2px 0px 30px rgb(255, 255, 255,0.1),-1px -2px 0px 45px rgb(255, 255, 255,0.1);   
+    animation-name:left;
+    transition: all 1s;
+
+}
+@keyframes right{
+    0%{left:64%;background-color: lightgray;}    
+    100%{left:5%;background-color: orange;}    
+    
+}
+@keyframes left{
+    0%{left:5%;background-color: orange;}    
+    100%{left:64%;background-color: lightgray;}    
+    
+}
+
+.cover{
+    position: relative;
+    z-index: 2;
+    margin-top: -100.8px;
+    left: -45px;
+    width: 130px;
+    height: 50px;
+    background: none ;
+    border: 45px solid ;
+    border-color: var(--color1);
+    border-radius: 80px;
+    transition: all 1s;
+
+}
+
+body{
+    background-color: var(--color1);
+    transition: all 1s;
+
+}
